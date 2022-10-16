@@ -1,12 +1,11 @@
-import classes from "./App.module.css";
-import Game from "./components/Game";
+import "./styles.css";
 
-function App() {
+import Game from "/src/components/Game";
+
+export default function App() {
   return (
-    <div className={classes.App}>
+    <div className="App">
       <Game rows={20} columns={10} />
     </div>
   );
 }
-
-export default App;
